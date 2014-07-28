@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SlickGrocer</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="dev.css">
+    <link rel="shortcut icon" type="text/css" href="images/favicon.ico">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45441902-1', 'slickgrocer.com');
+  ga('send', 'pageview');
+
+</script>
+  </head>
+  <body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+    $(function ()
+    { $("#email").popover();
+    });
+    </script>
+<div class="container">
+<nav class="navbar-top navbar-fixed-top" role="navigation">
+    <a href="index.html"><img class="medium-logo"src="images/sglogowhite.png"></a>
+    <a href="#"><span class="badge badge-important">Coming soon...</span></a>
+</nav>
+  <div class="row top-row dash">
+    <div class="col-sm-4 text-center btn-pad">
+        <button class="btn btn-primary btn-dash" data-toggle="modal" data-target="#aboutModal">
+        <br>
+          <img src="images/about.png" class="dash-image"><br>
+          <div class="dash-text">About</div>
+        </button>
+    </div>
+
+    <div class="col-sm-4 text-center btn-pad dash">
+      <a href="features.html">
+       <button class="btn btn-primary btn-dash">
+       <br>
+        <img src="images/cart.png" class="dash-image"><br>
+        <div class="dash-text">Features</div>
+       </button>
+      </a> 
+    </div>
+
+    <div class="col-sm-4 text-center btn-pad dash">
+      <button class="btn btn-primary btn-dash" data-toggle="modal" data-target="#contactModal">
+      <br>
+       <img src="images/horn.png" class="dash-image"><br>
+       <div class="dash-text">Contact </div>
+      </button>
+    </div>
+  </div>
+</div>
+
+<h2 class="text-center mantra">
+  Engagement. Intelligence. Convenience.
+</h2>
+
+<div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="aboutModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+        <div class="text-center"><img src="images/sglogoblack.png" class="smaller-logo"></div>
+        <h2>About</h2>
+      </div>
+      <div class="modal-body about-modal">
+        <div class="row">
+            <div class="col-xs-1"><i class="glyphicon glyphicon-user"></i></div> 
+            <div class="col-xs-11">Our mission is to empower grocers and customers to build relationships through an engaged shopping experience.</div>
+        </div>
+        <br><br>
+
+        <div class="row">
+            <div class="col-xs-1"><i class="glyphicon glyphicon-cloud"></i></div>
+            <div class="col-xs-11">To accomplish our mission, SlickGrocer offers a web application for grocery retailers coupled with a web &#38; mobile app for customers.</div>
+        </div>
+        <br><br>
+
+        <div class="row">
+            <div class="col-xs-1"><i class="glyphicon glyphicon-cog"></i></div> 
+            <div class="col-xs-11">We are currently developing and testing the SlickGrocer application. For more details you can see our <a href="features.html">features list</a> or contact us directly.</div>
+        </div>
+        <br><br>
+
+        <div class="row">
+           <div class="col-xs-1"><i class="glyphicon glyphicon-map-marker"></i></div> 
+           <div class="col-xs-11">SlickGrocer LLC is based out of Spokane, WA.</div>
+        </div>       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog" id="wide-modal">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+      <div class="text-center"><img src="images/sglogoblack.png" class="smaller-logo"></div>
+        <h2>Contact Us</h2>
+      </div>
+      <div class="modal-body contact-modal">
+        <div class="text-left">If you want more information about SlickGrocer, please get in touch!</div><br><br>
+
+      <div class="row">
+        <div class="col-xs-1"><i class="glyphicon glyphicon-envelope"></i></div> 
+        <div class="col-xs-11">contact@slickgrocer.com</div>
+      </div>
+      <br><br>
+
+      <div class="row">
+        <div class="col-xs-1"><i class="glyphicon glyphicon-earphone"></i></div> 
+        <div class="col-xs-11"> 509.730.5586</div>
+      </div>
+        <br><br>
+
+      <div class="row">
+        <div class="col-xs-1"><i class="glyphicon glyphicon-globe"></i></div> 
+        <div class="col-xs-11">slickgrocer.com</div>
+      </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<nav class="navbar navbar-fixed-bottom" role="navigation">
+  <div class="container">
+    <ul class="text-center">
+      <li>
+        <button type="button" class="btn btn-email" id="email" data-container="body" data-toggle="popover" data-placement="top" data-content="Email us at: contact@slickgrocer.com">
+          <img src="images/email.png">
+        </button>
+      </li>
+
+      <li>
+        <a href="https://twitter.com/Slickgrocer" target="_blank"><img src="images/twitter.png"></a>
+      </li>
+
+      <li>
+        <a href="https://www.facebook.com/pages/Slickgrocer/265485463614132" target="_blank"><img src="images/fb1.png"></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+  </body>
+</html>

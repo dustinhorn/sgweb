@@ -1,0 +1,303 @@
+
+
+body {
+  font-size: 22px;
+}
+
+h1 {
+  font-family: 'century gothic';
+  font-size: 28px;
+}
+
+.btn-dash {
+  width: 50%;
+  height: 0;
+  padding-bottom: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.btn-dash img {
+  width: 70%;
+}
+
+.badge-important {
+  background-color: #e3c14d;
+  color: #555555;
+  font-family: 'gill sans';
+  font-weight: normal;
+  margin-left: 10px;
+}
+
+@media (min-width: 200px) and (max-width: 399px)
+{
+  body {
+    font-size: 12px;
+  }
+
+  .dash-text {
+    font-size: 12px;
+  }
+
+  .carousel-caption {
+    display: none;
+  }
+
+  .mantra {
+    font-size: 15px;
+  }
+
+  .badge-important {
+    display: none;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 768px)
+{
+
+  body {
+    font-size: 14px;
+  }
+  
+  .dash button {
+    width: 30%;
+    height: 0;
+    padding-bottom: 30%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+  }
+
+  .mantra {
+    font-size: 20px;
+  }
+  
+  .badge-important {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px)
+{
+  body {
+    font-size: 16px;
+  }
+
+  .dash-text {
+    font-size: 16px;
+  }
+
+}
+
+#sg-logo {
+	height: 90%;
+}
+
+.top-row {
+	padding-top: 25px;
+	padding-bottom: 60px;
+  margin-top: 30%;
+}
+
+.navbar ul {
+	list-style: none;
+}
+
+.navbar {
+  height: 7%;
+  background-color: #555555;
+}
+
+.navbar-top {
+  height: 80px;
+  border-bottom: 4px solid #9da3ff;
+  padding: 2% 10% 0 10%;
+  background-color: #555555;
+}
+
+.icon img {
+  height: 85%;
+}
+
+.navbar li {
+	display: inline;
+	padding-right: 10%;
+}
+
+#mantra {
+	color: #555555;
+}
+
+.modal-body {
+	font-size: 1em;
+}
+
+.unstyled-list ul {
+	list-style: none;
+}
+
+.modal-dialog {
+	width: 80%;
+}
+
+.medium-logo {
+  height: 80%;
+  min-width: 150px;
+}
+
+.small-logo {
+	width: 30%;
+  min-width: 150px;
+}
+
+.smaller-logo {
+  width: 20%;
+  min-width: 100px;
+}
+
+.btn-pad {
+  padding-bottom: 5px;
+}
+
+.btn-email { 
+  color: #ffffff; 
+  background-color: #555555; 
+  border-color: #555555; 
+} 
+ 
+.btn-email:hover, 
+.btn-email:focus, 
+.btn-email:active, 
+.btn-email.active, 
+.open .dropdown-toggle.btn-email { 
+  color: #ffffff; 
+  background-color: #555555; 
+  border-color: #555555; 
+} 
+ 
+.btn-email:active, 
+.btn-email.active, 
+.open .dropdown-toggle.btn-email { 
+  background-image: none; 
+} 
+ 
+.btn-email.disabled, 
+.btn-email[disabled], 
+fieldset[disabled] .btn-email, 
+.btn-email.disabled:hover, 
+.btn-email[disabled]:hover, 
+fieldset[disabled] .btn-email:hover, 
+.btn-email.disabled:focus, 
+.btn-email[disabled]:focus, 
+fieldset[disabled] .btn-email:focus, 
+.btn-email.disabled:active, 
+.btn-email[disabled]:active, 
+fieldset[disabled] .btn-email:active, 
+.btn-email.disabled.active, 
+.btn-email[disabled].active, 
+fieldset[disabled] .btn-email.active { 
+  background-color: #555555; 
+  border-color: #555555; 
+} 
+ 
+.btn-email .badge { 
+  color: #555555; 
+  background-color: #ffffff; 
+}
+
+.btn-dash { 
+  color: #CCCCCC; 
+  background-color: #555555; 
+  border-color: #555555; 
+} 
+ 
+.btn-dash:hover, 
+.btn-dash:focus, 
+.btn-dash:active, 
+.btn-dash.active, 
+.open .dropdown-toggle.btn-dash { 
+  color: #CCCCCC; 
+  background-color: #4A4A4A; 
+  border-color: #555555; 
+} 
+ 
+.btn-dash:active, 
+.btn-dash.active, 
+.open .dropdown-toggle.btn-dash { 
+  background-image: none; 
+} 
+ 
+.btn-dash.disabled, 
+.btn-dash[disabled], 
+fieldset[disabled] .btn-dash, 
+.btn-dash.disabled:hover, 
+.btn-dash[disabled]:hover, 
+fieldset[disabled] .btn-dash:hover, 
+.btn-dash.disabled:focus, 
+.btn-dash[disabled]:focus, 
+fieldset[disabled] .btn-dash:focus, 
+.btn-dash.disabled:active, 
+.btn-dash[disabled]:active, 
+fieldset[disabled] .btn-dash:active, 
+.btn-dash.disabled.active, 
+.btn-dash[disabled].active, 
+fieldset[disabled] .btn-dash.active { 
+  background-color: #555555; 
+  border-color: #555555; 
+} 
+ 
+.btn-dash .badge { 
+  color: #555555; 
+  background-color: #CCCCCC; 
+}
+
+.carousel {
+  width: 97%;
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a >img {
+  border: 2px solid #cccccc;
+}
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+}
+
+.carousel-control span {
+  color: #555555;
+}
+
+.carousel-inner {
+  background-color: #CACACA;
+}
+
+.carousel-image img {
+  padding-bottom: 2px;
+}
+
+.about-modal {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.carousel-caption {
+  color: #555555;
+  margin: 0 auto;
+  line-height: 90%;
+}
+
+.carousel-indicators li {
+  background: #cccccc;
+}
+
+.carousel-indicators .active {
+  background: #555555;
+}
+
+.contact-modal {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+body { padding-bottom: 70px; padding-top: 70px;}
+.modal { position: absolute; }

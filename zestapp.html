@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SlickGrocer Software | Grocery Applications | Mobile Marketing Solution | SlickGrocer</title>
+    <meta name="description" content="SlickGrocer's app makes grocery shopping convenient by delivering real-time content, product info and item search from retailers to consumers.">
+
+<!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+
+<!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.ico">
+
+<!--Google Play Font-->
+<link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+
+<!--Google Analytics-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+   <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-45441902-1', 'slickgrocer.com');
+    ga('require', 'displayfeatures');
+    ga('send', 'pageview');
+
+  </script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+    $(function ()
+    { $("#email").popover();
+    });
+    </script>
+
+<!--Mailchimp-->
+<script>
+    $(document).ready(function(){ 
+        try {
+    $('#archive-list li:even').addClass("odd");
+        $('.field-group, .field-group input, .field-group select').bind('click',function(event){          
+      if (event.type == 'click') {
+        if ($(this).hasClass('field-group')){
+            var fg = $(this);
+            if($(this).children('.datefield').length == 1){
+                // Do not select 1st input so date picker will work.
+            } else {
+                $(this).find('input, select').slice(0,1).focus();
+              }
+        } else {
+            var fg = $(this).parents('.field-group');
+            $(this).focus();
+        }
+              fg.not('.focused-field').addClass('focused-field').children('.field-help').slideDown('fast');
+              $('.focused-field').not(fg).removeClass('focused-field').children('.field-help').slideUp('fast');
+      }
+        event.stopPropagation();
+        });
+        $('label').bind('click',function(event){
+      if (event.type == 'click') {
+                var fg = $(this).next();
+
+          if(fg.children('.datefield').length == 1){
+              // Do not select 1st input so date picker will work.
+          } else {
+              fg.find('input, select').slice(0,1).focus();
+            }
+              fg.not('.focused-field').addClass('focused-field').children('.field-help').slideDown('fast');
+              $('.focused-field').not(fg).removeClass('focused-field').children('.field-help').slideUp('fast');
+      }
+        event.stopPropagation();
+        });
+        // Allow select inputs to be width:auto up to 500px (because max-width doesn't work in IE7)
+        $("select").each(function(){
+            $(this).css("width", "auto");
+            if($(this).width() > 500){
+                $(this).css("width", "500px");
+            }
+        });
+
+        } catch(e){ console.log(e); }
+    });   
+</script>
+
+        <script src="http://downloads.mailchimp.com/js/jquery.mailcheck.min.js"></script>
+<script>
+    $(document).ready(function(){
+        try {
+        var domains =['hp.com','hotmail.co.uk','yahoo.co.uk','yahoo.com.tw','yahoo.com.au','yahoo.com.mx','gmail.com','hotmail.com','yahoo.com','aol.com','comcast.net','msn.com','seznam.cz','sbcglobal.net','live.com','bellsouth.net','hotmail.fr','verizon.net','mail.ru','btinternet.com','cox.net','yahoo.com.br','bigpond.com','att.net','yahoo.fr','mac.com','ymail.com','googlemail.com','earthlink.net','xtra.co.nz','me.com','yahoo.gr','walla.com','yahoo.es','charter.net','shaw.ca','live.nl','yahoo.ca','orange.fr','optonline.net','gmx.de','wanadoo.fr','optusnet.com.au','rogers.com','web.de','ntlworld.com','juno.com','yahoo.com.sg','rocketmail.com','yandex.ru','yahoo.co.in','centrum.cz','live.co.uk','sympatico.ca','libero.it','walla.co.il','bigpond.net.au','yahoo.com.hk','ig.com.br','live.com.au','free.fr','sky.com','uol.com.br','abv.bg','live.fr','terra.com.br','hotmail.it','tiscali.co.uk','rediffmail.com','aim.com','blueyonder.co.uk','telus.net','bol.com.br','hotmail.es','email.cz','windowslive.com','talktalk.net','home.nl','t-online.de','yahoo.de','telenet.be','163.com','embarqmail.com','windstream.net','roadrunner.com','bluewin.ch','skynet.be','laposte.net','yahoo.it','qq.com','live.dk','planet.nl','hetnet.nl','gmx.net','mindspring.com','rambler.ru','iinet.net.au','eircom.net','yahoo.com.ar','wp.pl','mail.com','emmis.com','hotmail.de','lireo.com','gmx.at','ukr.net','zol.co.zw'];
+        var tdomains = [];
+        $('#MERGE0').on('blur', function() {
+          $(this).mailcheck({
+            domains: domains,
+            topLevelDomains: tdomains,
+            suggested: function(element, suggestion) {
+                var msg = 'Hmm, did you mean '+suggestion.full+'?';
+                if ( $('#MERGE0_mailcheck').length > 0 ){
+                    $('#MERGE0_mailcheck').html(msg);
+                } else {
+                    element.after('<div id="MERGE0_mailcheck" class="errorText">'+msg+'</div>');
+                }
+            },
+            empty: function(element) {
+                if ( $('#MERGE0_mailcheck').length > 0 ){
+                    $('#MERGE0_mailcheck').remove();
+                }
+              return;
+            }
+          });
+        });
+        } catch(e){ console.log(e); }
+    });
+</script>
+
+<!--Galleria-->
+  <script src="js/galleria/galleria-1.3.6.min.js"></script>
+  <script src="js/galleria/themes/classic/galleria.classic.min.js"></script>
+<script>
+    Galleria.run('.galleria');
+    Galleria.configure({
+      height: 0.27368421,
+      imageCrop: 'width',
+      imageMargin: 0,
+      imagePosition: 'top-center',
+      autoplay: 5000,
+      easing: 'galleriaIn',
+      touchTransition: 'slide',
+      preload: '2',
+      showCounter: false,
+      pauseOnInteraction: false,
+      transitionSpeed: '800',
+      initialTransition: false,
+      swipe: 'auto',
+      debug: false,
+      dummy: 'images/galleria0.png',
+    })
+</script>
+</head>
+
+
+
+
+
+
+<body itemscope itemtype="http://schema.org/Organization">
+      <nav class="navbar navbar-top navbar-fixed-top" role="navigation" style="border-bottom: 4px solid #e3c14d;
+">
+    <a href="zestapp.html" style="vertical-align: bottom; font-size: 17px; font-family: 'Play', sans-serif; letter-spacing: 0.25em;"><img class="logo" src="images/navdark.png"></a>
+
+<!--    <span class="badge badge-important">Coming soon...</span>-->
+    <ul>
+      <li>
+        <a href="http://twitter.com/Slickgrocer" target="_blank"><img src="images/tbrand.png"></a>
+      </li>
+    </ul>  
+    <ul>
+      <li>
+        <a href="http://www.facebook.com/Slickgrocer" target="_blank"><img src="images/fbrand.png"></a>
+      </li>
+    </ul>
+</nav>
+  <div class="galleria">
+    <img src="images/g2e.png">
+    <img src="images/g1.jpg">
+  </div>
+  <div class="banner-strip" style="background-color: rgba(223, 197, 77, 0.8);">
+    <div class="banner-row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-8"><h1>Your mobile app for everything grocery.</h1></div>
+      <div class="col-sm-2"><a href="play.slickgrocer.com"><img src="images/play.png"></a></div>
+      <div class="col-sm-1"></div>
+    </div>
+  </div>
+  </div>
+  <main class="container">
+    <section class="breadrumb-row ">
+      <section class="col-lg-12">
+        <h5>
+        <ol class="breadcrumb" style="background-color: #fff;">
+          <li><a href="index.html">SlickGrocer</a></li>
+          <li class="active">Zest App</a></li>
+        <ol></h5>
+      </section>
+    </section>
+    <section class="row">
+      <section class="col-sm-4 icon thumbnail "><img src="images/final2.png">
+      </section>
+      <section class="col-sm-8">
+        <h2 class="text-left">Bringing Grocery Shopping &amp; Technology Together</h2></a>
+        <p>Use Zest wherever you are and whenever you want on your phone, tablet and computer.</p>
+      </section>
+    </section>
+    <section class="row border">
+      <section class="col-sm-4 col-sm-push-8 info thumbnail"><figure><img src="images/screenshots/search.jpg">
+        </figure>
+      </section>
+      <section class="col-sm-8 col-sm-pull-4">
+        <figcaption>
+          <h2 class="text-left">Local Product Search</h2>
+          <ul>
+            <li>Find items from stores in your area</li>
+            <li>Easily find specialty items without travelling around town</li>
+            <li>Compare store distance and item price</li>
+          </ul>
+          <p>Search for products and their information. You can add products to your shopping list directly from the search results. Also, find stores in your local area and subscribe to their feeds by favoriting them.</p>
+        </figcaption>
+      </section>
+    </section>
+   <section class="row border">
+      <section class="col-sm-4 info thumbnail"><img src="images/screenshots/lists.jpg">
+      </section>
+      <section class="col-sm-8">
+        <h2 class="text-left">List-Making</h2></a>
+        <p>If you've spent the time to create a list before you shouldn't have to do it again. You can save lists and see list history.</p>
+      </section>
+    </section>
+    <section class="row border">
+      <section class="col-sm-4 col-sm-push-8 info thumbnail"><figure><img src="images/screenshots/alerts.jpg">
+        </figure>
+      </section>
+      <section class="col-sm-8 col-sm-pull-4">
+        <figcaption>
+          <h2 class="text-left">Store Promotions &amp; Alerts Delivered to Your Mobile Device</h2>
+          <ul>
+            <li>Favorite a store to receive all of their updates in your feed</li>
+            <li>Easily use a promotion by adding the product right to your list</li>
+            <li>Request items from the app and receive alerts when they arrive in store</li>
+            <li>Set product alerts on items important to you to</li>
+          </ul>
+          <p>Receive the updates you want from the stores you follow delivered right to your dashboard feed. Keep in the know by signing up for alerts from your favorite stores. If they publish an update, you find out instantly through push notifications.</p>
+        </figcaption>
+      </section>
+    </section>
+    <section class="row border">
+      <section class="col-sm-6 text-center download">
+        <h2>Available Now for Android</h2>
+        <a href="play.slickgrocer.com"><img src="images/play.png"></a>
+      </section>
+      <section class="col-sm-6 text-center download">
+       <h2>Coming Soon for iPhone</h2>
+        <img style="opacity: 0.3;"src="images/store.png"><span class="badge badge-comingsoon">Coming soon...</span>
+      </section>
+    </section>
+
+
+
+<!-- THIS IS THE MODAL FOR THE BETA TESTER FORM  -->
+<div class="modal fade" id="betaModal" tabindex="-1" role="dialog" aria-labelledby="betaModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+        <div class="text-center"><img src="images/sglogoblack.png" class="smaller-logo"></div>
+        <h2>Become A Beta Tester</h2>
+      </div>
+      <div class="modal-body beta-modal">
+        <div class="row">
+          <iframe src="https://docs.google.com/a/slickgrocer.com/forms/d/1QOpTYGH4aZDJNwALFC-gxyfCTPDyHspoPiLd7-eihLc/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<nav class="navbar navbar-fixed-bottom" role="navigation">
+  <div class="container">
+    <ul>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li>Copyright &copy; <script>document.write((new Date()).getFullYear());</script> SlickGrocer LLC. All Rights Reserved.</li>
+      <li><button class="btn btn-link" data-toggle="modal" data-target="#betaModal">Beta Test</button></li>
+    </ul>
+  </div>
+</nav>
+  </body>
+</html>
