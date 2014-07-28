@@ -104,6 +104,7 @@ ul {
 .thumbnail {
   border: none;
   text-align: center;
+  background-color: rgba(83, 189, 170, 0);
 }
 
 .icon img {
@@ -112,8 +113,6 @@ ul {
 
 .info img {
   height: 300px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
 }
 
 .info img:hover {
@@ -125,6 +124,7 @@ ul {
   -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.5);
   -moz-box-shadow: 0 3px 6px rgba(0,0,0,.5);
   border: none;
+  background-color: #fff;
 }
 
 .download img {
@@ -763,7 +763,7 @@ fieldset[disabled] .btn-link.active {
 
   .thumbnail {
     border: none;
-}
+  }
 }
 
 @media (min-width: 480px) and (max-width: 640px)
