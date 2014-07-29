@@ -179,7 +179,9 @@ ul {
   border-top: 1px solid #ccc;
 }
 
-
+.bordered {
+  border: 1px solid #ccc;
+}
 
 
 
@@ -258,26 +260,24 @@ ul {
   line-height: 56px;
   background-color: #eee;
   border-left: 1px solid #cccccc;
-
-  padding: 0 20px;
-  filter: grayscale(1);
-  -webkit-filter: grayscale(1);
-  -moz-filter: grayscale(1);
-  -o-filter: grayscale(1);
-  -ms-filter: grayscale(1);
 }
 
 .navbar-top ul > li:hover {
   background-color: #ccc;
-  filter: grayscale(1);
-  -webkit-filter: grayscale(1);
-  -moz-filter: grayscale(1);
-  -o-filter: grayscale(1);
-  -ms-filter: grayscale(1);
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+  -moz-filter: grayscale(0);
+  -o-filter: grayscale(0);
+  -ms-filter: grayscale(0);
   }
 
 .navbar-top ul > li img {
   display: inline-block;
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+  -moz-filter: grayscale(0);
+  -o-filter: grayscale(0);
+  -ms-filter: grayscale(0);
 }
 
 .navbar-top ul > li:hover img {
@@ -331,6 +331,18 @@ ul {
 
 /* BUTTON ELEMENTS */
 
+.btn-social {
+  background-color: #eeeeee;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  padding: 10px 20px;
+}
+
+.btn-social:hover {
+  background-color: #cccccc;
+}
+
 .dash-text {
   font-size: 16px;
 }
@@ -341,14 +353,14 @@ ul {
 
 .btn-dash {
   width: 50%;
-  height: 0;
-  padding-bottom: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  color: #555555; 
-  background-color: #53bdaa; 
-  border-color: #53bdaa; 
+  height: 40px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  color: #555555;
+  background-color: #53bdaa;
+  border-color: #53bdaa;
+  font-size: 18px;
 }
 
 .btn-dash img {
@@ -367,9 +379,9 @@ ul {
 .btn-dash:active, 
 .btn-dash.active, 
 .open .dropdown-toggle.btn-dash { 
-  color: #53bdaa; 
-  background-color: #4A4A4A; 
-  border-color: #555555; 
+  color: #555555; 
+  background-color: #e3c14d; 
+  border-color: #e3c14d;
 } 
  
 .btn-dash:active, 
