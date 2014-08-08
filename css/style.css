@@ -74,6 +74,9 @@ ul {
 
 /* GENERAL ELEMENTS */
 
+#contact {
+}
+
 .breadcrumb {
 }
 
@@ -164,11 +167,11 @@ ul {
 
 .infolt img:active {
   -webkit-transition: -webkit-transform .1s linear;  
-  -webkit-transform: scale(2.75) translate(100px);
-  -moz-transform: scale(2.75) translate(100px);
-  -ms-transform: scale(2.75) translate(100px);
-  -o-transform: scale(2.75) translate(100px);
-  transform: scale(2.75) translate(100px);
+  -webkit-transform: scale(2.75) translate(125px);
+  -moz-transform: scale(2.75) translate(125px);
+  -ms-transform: scale(2.75) translate(125px);
+  -o-transform: scale(2.75) translate(125px);
+  transform: scale(2.75) translate(125px);
   position: relative;
   z-index: 5;
   -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.5);
@@ -184,11 +187,11 @@ ul {
 
 .infort img:active {
   -webkit-transition: -webkit-transform .1s linear;  
-  -webkit-transform: scale(2.75) translate(-100px);
-  -moz-transform: scale(2.75) translate(-100px);
-  -ms-transform: scale(2.75) translate(-100px);
-  -o-transform: scale(2.75) translate(-100px);
-  transform: scale(2.75) translate(-100px);
+  -webkit-transform: scale(2.75) translate(-125px);
+  -moz-transform: scale(2.75) translate(-125px);
+  -ms-transform: scale(2.75) translate(-125px);
+  -o-transform: scale(2.75) translate(-125px);
+  transform: scale(2.75) translate(-125px);
   position: relative;
   z-index: 5;
   -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.5);
@@ -536,10 +539,44 @@ fieldset[disabled] .btn-link.active {
   margin: -20px 0 0;
 }
 
+#formModal {
+  margin: 0 auto;
+  padding: 2% 15% 0;
+}
 
+#formModal .modal-body {
+  padding: 10px 100px 20px;
+  margin: 0 auto;
+}
 
+.control-group {
+  text-align: center;
+  font-size: 16px;
+}
 
+.control-label {
+  text-align: left;
+}
 
+::-webkit-input-placeholder {
+   font-size: 16px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   font-size: 16px;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   font-size: 16px;
+}
+
+:-ms-input-placeholder {  
+   font-size: 16px;
+}
+
+.input-xxlarge {
+  width: 90%;
+}
 
 /* MEDIA QUERIES */
 
@@ -632,6 +669,11 @@ fieldset[disabled] .btn-link.active {
   -ms-transform: scale(1.75);
   -o-transform: scale(1.75);
 }
+
+.navbar li {
+  display: inline;
+  margin: 0 1%;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 640px)
@@ -800,30 +842,6 @@ fieldset[disabled] .btn-link.active {
 
 .infolt img:active {
   -webkit-transition: -webkit-transform .1s linear;  
-  -webkit-transform: scale(2.75) translate(60px);
-  -moz-transform: scale(2.75) translate(60px);
-  -ms-transform: scale(2.75) translate(60px);
-  -o-transform: scale(2.75) translate(60px);
-  transform: scale(2.75) translate(60px);
-}
-
-.infort img:active {
-  -webkit-transition: -webkit-transform .1s linear;  
-  -webkit-transform: scale(2.75) translate(-60px);
-  -moz-transform: scale(2.75) translate(-60px);
-  -ms-transform: scale(2.75) translate(-60px);
-  -o-transform: scale(2.75) translate(-60px);
-  transform: scale(2.75) translate(-60px);
-}
-
-}
-
-@media (min-width: 993px) and (max-width: 1366px)
-{
-  body {}
-
-.infolt img:active {
-  -webkit-transition: -webkit-transform .1s linear;  
   -webkit-transform: scale(2.75) translate(75px);
   -moz-transform: scale(2.75) translate(75px);
   -ms-transform: scale(2.75) translate(75px);
@@ -838,6 +856,30 @@ fieldset[disabled] .btn-link.active {
   -ms-transform: scale(2.75) translate(-75px);
   -o-transform: scale(2.75) translate(-75px);
   transform: scale(2.75) translate(-75px);
+}
+
+}
+
+@media (min-width: 993px) and (max-width: 1366px)
+{
+  body {}
+
+.infolt img:active {
+  -webkit-transition: -webkit-transform .1s linear;  
+  -webkit-transform: scale(2.75) translate(100px);
+  -moz-transform: scale(2.75) translate(100px);
+  -ms-transform: scale(2.75) translate(100px);
+  -o-transform: scale(2.75) translate(100px);
+  transform: scale(2.75) translate(100px);
+}
+
+.infort img:active {
+  -webkit-transition: -webkit-transform .1s linear;  
+  -webkit-transform: scale(2.75) translate(-100px);
+  -moz-transform: scale(2.75) translate(-100px);
+  -ms-transform: scale(2.75) translate(-100px);
+  -o-transform: scale(2.75) translate(-100px);
+  transform: scale(2.75) translate(-100px);
 }
 
 }

@@ -233,14 +233,92 @@
         </figcaption>
       </section>
     </section>
-    <section class="row border">
-      <section class="col-sm-6 text-center"><h2>Sign Up</h2>
-        <button class="btn btn-dash" data-target="register.zestapp.com">Register Here</button></section>
-      <section class="col-sm-6 text-center download">
+    <section id="contact" class="row border">
+<!--      <section class="col-sm-6 text-center"><h2>Ask About Signing Up</h2>
+        <button class="btn btn-dash" data-toggle="modal" data-target="#formModal">Contact Us</button></section>-->
+      <section class="col-sm-12 text-center download">
         <h2>Access The Zest Web App</h2>
         <a href="www.zestapp.com">www.zestapp.com</a>
       </section>
     </section>
+
+
+<!-- THIS IS THE MODAL FOR SIGN-UP FORM -->
+<div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="formModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+        <div class="text-center"><img src="images/logodarker.png" class="smaller-logo"></div>
+        <h2>Ask About Signing Up</h2>
+      </div>
+      <div class="modal-body beta-modal">
+        <div class="row">
+          <form class="form-horizontal" action="/webformmailer.php" method="post">
+          <input type="hidden" name="subject" value="SignUp Inquiry" />
+          <input type="hidden" name="redirect" value="retailers.html#contact" />
+          <input type="hidden" name="form_format" value="html"/>
+          <fieldset>
+          <!-- Text input-->
+          <div class="control-group">
+            <label class="control-label" for="name">Name*</label>
+            <div class="controls">
+              <input id="name" name="name" type="text" placeholder="eg John Smith (required)" class="input-xxlarge" required="">
+              
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="control-group">
+            <label class="control-label" for="email">Email*</label>
+            <div class="controls">
+              <input id="email" name="email" type="text" placeholder="address@example.com (required)" class="input-xxlarge" required="">
+              
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="control-group">
+            <label class="control-label" for="store">Store Name</label>
+            <div class="controls">
+              <input id="store" name="store" type="text" placeholder="Example Store Name" class="input-xxlarge">
+              
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="control-group">
+            <label class="control-label" for="location">Store Location</label>
+            <div class="controls">
+              <input id="location" name="location" type="text" placeholder="City, State" class="input-xxlarge">
+              
+            </div>
+          </div>
+
+          <!-- Textarea -->
+          <div class="control-group">
+            <label class="control-label" for="notes">Questions or Comments</label>
+            <div class="controls">
+              <textarea id="notes" name="notes"  class="input-xxlarge" placeholder="Any specifc details."></textarea>
+            </div>
+          </div>
+
+          <!-- Button -->
+          <div class="control-group">
+            <label class="control-label" for="button"></label>
+            <div class="controls">
+              <button id="button" type="submit" name="submit" value="submit" class="btn btn-dash">Send</button>
+            </div>
+          </div>
+
+          </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
