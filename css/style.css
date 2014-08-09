@@ -26,19 +26,19 @@ body {
 }
 
 h1 {
-  font-family: 'century gothic';
+  font-family: 'century gothic', arial;
   font-size: 24px;
   letter-spacing: 0.125em;
   margin: 10px 0;
 }
 
 h2 {
-  font-family: 'century gothic';
+  font-family: 'century gothic', arial;
   font-size: 22px;
 }
 
 h3 {
-  font-family: 'century gothic';
+  font-family: 'century gothic', arial;
   font-size: 18px;
   }
 
@@ -306,6 +306,7 @@ ul {
   float: right;
   margin-top: -15px;
 }
+
 .navbar-top ul > li {
   display: inline-block;
   line-height: 56px;
@@ -605,15 +606,15 @@ fieldset[disabled] .btn-link.active {
 
   .navbar-top {
     height: 45px;
-    padding: 10px 30px;
+    padding: 10px;
   }
 
   .btn-social {
-    padding: 5px 20px;
+    padding: 4px 10px;
 }
   .navbar-top ul > li {
     display: inline-block;
-    line-height: 46px;
+    line-height: 45px;
     background-color: #eee;
     border-left: 1px solid #cccccc;
 }
@@ -671,9 +672,18 @@ fieldset[disabled] .btn-link.active {
 }
 
 .navbar li {
+  font-size: 9px;
   display: inline;
   margin: 0 1%;
   }
+
+.download a {
+  font-size: 18px;
+}
+
+.social ul > li img {
+  width: 48px;
+}
 }
 
 @media (min-width: 481px) and (max-width: 640px)
@@ -696,6 +706,10 @@ fieldset[disabled] .btn-link.active {
 
   .thumbnail {
     border: none;
+}
+
+  .btn-social {
+    padding: 4px 10px;
 }
 
   .banner-strip {
@@ -743,6 +757,10 @@ fieldset[disabled] .btn-link.active {
   -moz-transform: scale(2.25);
   -ms-transform: scale(2.25);
   -o-transform: scale(2.25);
+}
+
+.download a {
+  font-size: 18px;
 }
 }
 
@@ -811,6 +829,10 @@ fieldset[disabled] .btn-link.active {
   -ms-transform: scale(2.75);
   -o-transform: scale(2.75);
 }
+
+.download a {
+  font-size: 21px;
+}
 }
 
 @media (min-width: 769px) and (max-width: 992px)
@@ -857,7 +879,9 @@ fieldset[disabled] .btn-link.active {
   -o-transform: scale(2.75) translate(-75px);
   transform: scale(2.75) translate(-75px);
 }
-
+.download a {
+  font-size: 21px;
+}
 }
 
 @media (min-width: 993px) and (max-width: 1366px)
@@ -881,7 +905,6 @@ fieldset[disabled] .btn-link.active {
   -o-transform: scale(2.75) translate(-100px);
   transform: scale(2.75) translate(-100px);
 }
-
 }
 
 @media (min-width: 1367px)
